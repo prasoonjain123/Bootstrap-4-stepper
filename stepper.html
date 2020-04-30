@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src='stepper.js'></script>
+</head>
+
+<body>
+    <div class="container" style="text-align: center; margin-top: 2%">
+        <h1 style="color: #5d4f9f;">Bootstrap 4 stepper</h1>
+    </div>
+    <div class="container shadow main">
+        <div class="d-flex justify-content-center">
+            <div class="step1">
+                <span class="first activeStep">1</span>
+                <span>Step 2</span>
+            </div>
+            <div class="line1">
+                <hr>
+            </div>
+            <div class="step2">
+                <span class="second">2</span>
+                <span>Step 2</span>
+            </div>
+            <div class="line2">
+                <hr>
+            </div>
+            <div class="step3">
+                <span class="third">3</span>
+                <span>Step 3</span>
+            </div>
+        </div>
+
+        <div class="container" style="padding: 5% 10%; text-align: center;">
+            <div class="form1" style="display: block;">
+                <input type="email" class="form-control" placeholder="Enter email...">
+                <button class="btn btn-primary mt-5 shadow" onclick="nextStep(2)">Next</button>
+            </div>
+            <div class="form2" style="display: none;">
+                <input type="text" class="form-control" placeholder="Enter Name...">
+                <button class="btn btn-primary mt-5 shadow" onclick="nextStep(3)">Next</button>
+                <button class="btn btn-danger mt-5 shadow" onclick="prevStep(1)">Prev</button>
+            </div>
+            <div class="form3" style="display: none;">
+                <input type="text" class="form-control" placeholder="Enter interest...">
+                <button class="btn btn-primary mt-5 shadow" onclick="nextStep(4)">Next</button>
+                <button class="btn btn-danger mt-5 shadow" onclick="prevStep(2)">Prev</button>
+            </div>
+            <div class="form4" style="display: none; ">
+                <h3>Steps completed</h3>
+                <button class="btn btn-danger mt-5 shadow" onclick="prevStep(3)">Prev</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
